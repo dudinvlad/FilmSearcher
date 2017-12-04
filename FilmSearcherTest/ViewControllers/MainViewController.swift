@@ -107,6 +107,7 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
                     weakSelf.loadingStatus = false
                 }
                 if let movies = objects as? [MovieModel] {
+                    if movies.isEmpty {return}
                     weakSelf.dataSource.append(contentsOf: movies)
                     weakSelf.tableView.reloadData()
                     weakSelf.loadingStatus = false

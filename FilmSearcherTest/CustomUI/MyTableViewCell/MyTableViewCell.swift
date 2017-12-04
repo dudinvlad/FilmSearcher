@@ -20,4 +20,10 @@ class MyTableViewCell : UITableViewCell {
         guard let posterPath = movie.posterPath else {return}
         posterImageView.sd_setImage(with:URL(string: ImagePath + "/w500" + posterPath) , placeholderImage: #imageLiteral(resourceName: "movie_placeholder"))
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        titleLabel.text = ""
+        posterImageView.image = #imageLiteral(resourceName: "movie_placeholder")
+    }
 }

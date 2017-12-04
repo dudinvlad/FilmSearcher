@@ -72,6 +72,8 @@ class DetailMovieViewController: BaseViewController {
         releaseDateLabel.attributedText = attributedString
         if let posterPath = movie.posterPath {
             movieImageView.sd_setImage(with: URL(string: ImagePath + "/w500" + posterPath), placeholderImage: #imageLiteral(resourceName: "movie_placeholder"))
+        } else {
+            movieImageView.image = #imageLiteral(resourceName: "movie_placeholder")
         }
     }
     
