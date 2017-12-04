@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireNetworkActivityLogger (2.2.0):
+    - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - IQKeyboardManagerSwift (5.0.6)
+  - ObjectMapper (3.1.0)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SVProgressHUD (2.2.2)
+  - SwiftyJSON (4.0.0)
+  - youtube-ios-player-helper (0.1.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireNetworkActivityLogger
+  - AlamofireObjectMapper
+  - IQKeyboardManagerSwift
+  - ObjectMapper
+  - SDWebImage (~> 4.2)
+  - SVProgressHUD
+  - SwiftyJSON
+  - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireNetworkActivityLogger: a7ae1842988b3f6248a49213268375bd27b515f0
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+
+PODFILE CHECKSUM: f26ce9df13b3f1af812676e630b1ec855242e6fa
+
+COCOAPODS: 1.1.1
