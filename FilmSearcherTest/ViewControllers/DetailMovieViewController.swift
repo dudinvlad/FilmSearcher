@@ -11,6 +11,7 @@ import SDWebImage
 import youtube_ios_player_helper
 
 let bottomScrollViewContentOffset = CGFloat(20)
+let errorMessage = "Could not find trailer"
 
 class DetailMovieViewController: BaseViewController {
     
@@ -75,7 +76,7 @@ class DetailMovieViewController: BaseViewController {
     }
     
     func playVideo() {
-        guard let trailerPath = movie.videoPath else {return}
+        guard let trailerPath = movie.videoPath else {alertWith(errorMessage); return}
         videoView.load(withVideoId: trailerPath)
     }
     

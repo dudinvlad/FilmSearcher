@@ -27,8 +27,8 @@ class MovieService {
             if let error = error {
                 completion(nil, error)
             }
-            guard let dataArray = ResponseHelper.getDataArray(response) else {completion(nil, ""); return}
-            guard let films = Mapper<MovieModel>().mapArray(JSONArray: dataArray) as [MovieModel]? else {completion(nil, ""); return}
+            guard let dataArray = ResponseHelper.getDataArray(response) else {completion(nil, "Couldn't get objects"); return}
+            guard let films = Mapper<MovieModel>().mapArray(JSONArray: dataArray) as [MovieModel]? else {completion(nil, "Couldn't parse objects"); return}
             completion(films, error)
         })
     }
@@ -50,8 +50,8 @@ class MovieService {
                 completion(nil, error)
                 return
             }
-            guard let dataArray = ResponseHelper.getDataArray(response) else {completion(nil, ""); return}
-            guard let films = Mapper<MovieModel>().mapArray(JSONArray: dataArray) as [MovieModel]? else {completion(nil, ""); return}
+            guard let dataArray = ResponseHelper.getDataArray(response) else {completion(nil, "Couldn't get objects"); return}
+            guard let films = Mapper<MovieModel>().mapArray(JSONArray: dataArray) as [MovieModel]? else {completion(nil, "Couldn't parse objects"); return}
             completion(films, error)
         })
     }
